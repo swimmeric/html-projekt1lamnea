@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt1LamSwe</title>
+    <link rel="stylesheet" href="lamstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />
+</head>
+<body>
+<source>
+    <br side="left">
+    <img src="https://cdn.prod.website-files.com/659e83b360ee12bb5d1af69f/65afc1a8966c1a7d2118a927_Logo_white.webp" alt="Website Logo" id="lamnealogo" title="Lämneå Bruk AB" width="300">
+</source>
+    <br>
+<div class="button-group0">
+    <a href="omlamnea.html" class="alternative">Om Oss</a>
+    <a href="produkter.html" class="alternative">Maskiner</a>
+    <a href="kontakt.html" class="alternative">Kontakt</a>
+</div>
+    <br>
+<div class="recipe-container">
+    <div class="recipe-box">
+        <h1>Eric's Cinnamon Roll Recipe</h1>
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <div class="dough-ingredients">
+                <h3>For the dough:</h3>
+                <ul>
+                    <li>¾ cup warm milk</li>
+                    <li>2 ¼ teaspoons yeast</li>
+                    <li>¼ cup granulated sugar</li>
+                    <li>1 egg plus 1 egg yolk</li>
+                    <li>¼ cup butter</li>
+                    <li>3 cups bread flour</li>
+                </ul>
+            </div>
+            <div class="filling-ingredients">
+                <h3>For the filling:</h3>
+                <ul>
+                    <li>2/3 cup dark brown sugar</li>
+                    <li>1 ½ tablespoons ground cinnamon</li>
+                    <li>¼ cup butter</li>
+                </ul>
+            </div>
+        </div>
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Mix the milk with the yeast, sugar, eggs.</li>
+                <li>Melt the butter and add to the mixture.</li>
+                <li>Add in the flour and mix until combined into a dough.</li>
+                <li>Knead the dough for 10 minutes.</li>
+                <li>Transfer the dough into a large bowl and cover with plastic wrap. Leave it somewhere to rise for 2 hours.</li>
+                <li>After the dough has doubled in size, roll it out into a large rectangle.</li>
+            </ol>
+            <div class="button-group">
+                <button class="btn startbaking">Start Baking</button>
+                <button class="more">More</button>
+                <button class="likeit" aria-label="Save">
+                  <span class="material-symbols-outlined">favorite</span>
+                </button>
+            </div>              
+        </div>
+    </div>
+    <br>
+    <div class="recipe-box">
+        <h1>Tropical Mango Chicken Salad</h1>
+            <ul>
+                <li>2 boneless, skinless chicken breasts</li>
+                <li>1 large ripe mango, peeled and diced</li>
+                <li>1 avocado, diced</li>
+                <li>½ red bell pepper, diced</li>
+                <li>¼ cup thinly sliced red onion</li>
+                <li>½ cup cherry tomatoes, halved</li>
+                <li>1 cup mixed salad greens</li>
+                <li>¼ cup fresh cilantro, roughly chopped</li>
+                    <ul>
+                        <li>Try it out!</li>
+                    </ul>
+                <li>Definitely worth it!</li>
+            </ul>
+            <div class="button-group">
+                <button class="btn startcooking">Start Cooking</button>
+                <button class="more">More</button>
+                <button class="likeit" aria-label="Save">
+                  <span class="material-symbols-outlined">favorite</span>
+            </div>
+        </div>
+</div>
+        <br>
+        <div class="recipe-box">
+            <h2>My favourite websites</h2>
+            <ol>
+                <li><a href="https://www.google.com">Google</a></li>
+                <li><a href="https://www.youtube.com">YouTube</a></li>
+                <li><a href="https://www.facebook.com">FaceBook</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+                <li><a href="https://royaleapi.com/">RoyaleAPI</a></li>
+            </ol>
+        </div>
+    </div>
+<br>
+    <script>
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+            alert('Baking started! You are officially sigma now!');
+            });
+        });
+        const likeButtons = document.querySelectorAll('.likeit');
+        likeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+            const icon = button.querySelector('.material-symbols-outlined');
+            if (icon.style.color === "red") {
+                icon.style.color = "";
+            } else {
+                icon.style.color = "red";
+            }
+            });
+        });
+    </script>
+</body>
+</html>
